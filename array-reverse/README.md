@@ -1,1 +1,1 @@
-![array-reverse](MyFirstBoard-lab1.png)
+![array-reverse](lab1.png)
