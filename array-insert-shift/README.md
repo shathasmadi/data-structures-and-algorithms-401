@@ -5,4 +5,4 @@
 ## Creat an arrayList and add its Items then add to it the new Item and define where its going to be added (index).
 
 ## Whiteboard Process
-![array-insert-shift](array-insert-shift/lab2.jpg)
+![array-insert-shift](lab2.jpg)
