@@ -1,6 +1,6 @@
 # data-structures-and-algorithms-401
 
-## Table of contents :
+## Table Of Contents :
 
 |assignment |link|
 |-----------|----|
