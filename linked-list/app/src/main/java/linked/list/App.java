@@ -20,6 +20,18 @@ public class App {
         list.insertNode(1);
         list.insertNode(2);
 
+        // code challenge 6 : linked-list-insertions
+
+        //1-append
+          list.append(4);
+
+
+       //2-insertBefore
+          list.insertBefore(2,5);
+
+
+        //3-insertAfter
+           list.insertAfter(8,4);
 
 
         System.out.println(list.includes(5));
