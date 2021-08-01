@@ -22,4 +22,4 @@ insert : inserts method at the head of a list
 
 includes : checks the list for a value & returns True or False
 
-toString : formats the string and output of a lis
+toString : formats the string and output of a list

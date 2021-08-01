@@ -5,6 +5,7 @@ public class Node {
     Node next;
 
     public Node(int number){
+
         this.value=number;
     }
 }

@@ -53,5 +53,48 @@ class AppTest {
         linkedTest.insertNode(3);
         linkedTest.insertNode(4);
         assertEquals("{ 4 } -> { 3 } -> { 2 } -> { 5 } -> { 2 } -> { 5 } -> { 2 } -> { 5 } -> { 5 } -> NULL",linkedTest.toString());
+
+
+        // solve lab 6 code challenge 6 : linked-list-insertions
+
+
+        //Can successfully add a node to the end of the linked list
+
+        linkedTest.append(8);
+        assertEquals("{ 4 } -> { 3 } -> { 2 } -> { 5 } -> { 2 } -> { 5 } -> { 2 } -> { 5 } -> { 5 } -> { 8 } -> NULL",linkedTest.toString());
+
+
+        //Can successfully add multiple nodes to the end of a linked list
+
+        linkedTest.append(9);
+        linkedTest.append(10);
+        assertEquals("{ 4 } -> { 3 } -> { 2 } -> { 5 } -> { 2 } -> { 5 } -> { 2 } -> { 5 } -> { 5 } -> { 8 } -> { 9 } -> { 10 } -> NULL",linkedTest.toString());
+
+
+        //Can successfully insert a node before a node located i the middle of a linked list
+
+        linkedTest.insertBefore(5,20);
+        assertEquals("{ 4 } -> { 3 } -> { 2 } -> { 20 } -> { 5 } -> { 2 } -> { 5 } -> { 2 } -> { 5 } -> { 5 } -> { 8 } -> { 9 } -> { 10 } -> NULL",linkedTest.toString());
+
+
+       //Can successfully insert a node before the first node of a linked list
+
+        linkedTest.insertBefore(4,19);
+        assertEquals("{ 19 } -> { 4 } -> { 3 } -> { 2 } -> { 20 } -> { 5 } -> { 2 } -> { 5 } -> { 2 } -> { 5 } -> { 5 } -> { 8 } -> { 9 } -> { 10 } -> NULL",linkedTest.toString());
+
+
+        //Can successfully insert after a node in the middle of the linked list
+
+        linkedTest.insertAfter(20,15);
+        assertEquals("{ 19 } -> { 4 } -> { 3 } -> { 2 } -> { 20 } -> { 15 } -> { 5 } -> { 2 } -> { 5 } -> { 2 } -> { 5 } -> { 5 } -> { 8 } -> { 9 } -> { 10 } -> NULL",linkedTest.toString());
+
+
+        //Can successfully insert a node after the last node of the linked list
+
+        linkedTest.insertAfter(10,14);
+        assertEquals("{ 19 } -> { 4 } -> { 3 } -> { 2 } -> { 20 } -> { 15 } -> { 5 } -> { 2 } -> { 5 } -> { 2 } -> { 5 } -> { 5 } -> { 8 } -> { 9 } -> { 10 } -> { 14 } -> NULL",linkedTest.toString());
+
     }
+
+
 }
