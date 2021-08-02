@@ -94,6 +94,37 @@ class AppTest {
         linkedTest.insertAfter(10,14);
         assertEquals("{ 19 } -> { 4 } -> { 3 } -> { 2 } -> { 20 } -> { 15 } -> { 5 } -> { 2 } -> { 5 } -> { 2 } -> { 5 } -> { 5 } -> { 8 } -> { 9 } -> { 10 } -> { 14 } -> NULL",linkedTest.toString());
 
+
+
+        //lab 7: code challenge 7 linked-list-kth
+
+
+        //Where k is greater than the length of the linked list
+        assertEquals(19,linkedTest.kthNode(20));
+
+
+
+        //Where k and the length of the list are the sam
+          assertEquals(19,linkedTest.kthNode(16));
+
+
+
+        //Where k is not a positive integer
+          assertEquals(19,linkedTest.kthNode(-15));
+
+
+
+        //Where the linked list is of a size 1
+          LinkedList newTest = new LinkedList();
+          newTest.append(6);
+          assertEquals(6,newTest.kthNode(0));
+
+
+
+        //Happy Path where k is not at the end, but somewhere in the middle of the linked list
+        assertEquals(8,linkedTest.kthNode(3));
+
+
     }
 
 
