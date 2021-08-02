@@ -20,23 +20,31 @@ public class App {
         list.insertNode(1);
         list.insertNode(2);
 
-        // code challenge 6 : linked-list-insertions
+        System.out.println(list);
 
-        //1-append
-          list.append(4);
+//        // code challenge 6 : linked-list-insertions
+//
+//        //1-append
+//          list.append(4);
+//
+//
+//       //2-insertBefore
+//          list.insertBefore(2,5);
+//
+//
+//        //3-insertAfter
+//           list.insertAfter(8,4);
+//
+//
+//        System.out.println(list.includes(5));
+//
+//
+//        System.out.println(list.toString());
 
 
-       //2-insertBefore
-          list.insertBefore(2,5);
+        //code challenge 7: linked-list-kth
+        list.kthNode(0);
+        System.out.println(list.kthNode(20));
 
-
-        //3-insertAfter
-           list.insertAfter(8,4);
-
-
-        System.out.println(list.includes(5));
-
-
-        System.out.println(list.toString());
     }
 }

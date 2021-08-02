@@ -1,5 +1,7 @@
 package linked.list;
 
+import java.lang.constant.Constable;
+
 public class LinkedList {
     Node head;
 
@@ -90,6 +92,33 @@ public class LinkedList {
         curr.next = newNode;
 
     }
+
+
+    //lab 7: code challenge 7 linked-list-kth
+
+    public int kthNode( int k)
+    {
+       int count =0;
+       Node curr= head;
+
+       while(curr.next != null){
+           curr=curr.next;
+           count++;
+       }
+         curr=head;
+       if(k>=0){
+           for (int i = 0; i <count-k ; i++) {
+               if(curr.next != null) {
+                   curr=curr.next;
+               }
+       }
+
+
+            }
+       return curr.value;
+    }
+
+
 }
 
 
