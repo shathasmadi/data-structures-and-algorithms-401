@@ -12,16 +12,16 @@ public class App {
     public static void main(String[] args) {
 
         System.out.println(new App().getGreeting());
-        LinkedList list = new LinkedList();
-        list.insertNode(7);
-        list.insertNode(5);
-        list.insertNode(3);
-        list.insertNode(8);
-        list.insertNode(1);
-        list.insertNode(2);
-
-        System.out.println(list);
-
+//        LinkedList list = new LinkedList();
+//        list.insertNode(7);
+//        list.insertNode(5);
+//        list.insertNode(3);
+//        list.insertNode(8);
+//        list.insertNode(1);
+//        list.insertNode(2);
+//
+//        System.out.println(list);
+//
 //        // code challenge 6 : linked-list-insertions
 //
 //        //1-append
@@ -40,11 +40,55 @@ public class App {
 //
 //
 //        System.out.println(list.toString());
+//
+//
+//        //code challenge 7: linked-list-kth
+//        list.kthNode(0);
+//        System.out.println(list.kthNode(20));
 
 
-        //code challenge 7: linked-list-kth
-        list.kthNode(0);
-        System.out.println(list.kthNode(20));
+        // code challenge 8: linked-list-zip
+
+        LinkedList testOne = new LinkedList();
+        testOne.append(1);
+
+
+        LinkedList testTwo = new LinkedList();
+        testTwo.append(8);
+        testTwo.append(5);
+
+
+        System.out.println(testOne);
+        System.out.println(testTwo);
+
+        linkedListZip(testOne, testTwo);
+
+        System.out.println(testTwo);
 
     }
+
+    // code challenge 8 linked-list-zip:
+
+
+    public static Node linkedListZip(LinkedList firstList, LinkedList secondList) {
+
+        Node currentFirst = firstList.head;
+        Node currentSecond = secondList.head;
+        while (true) {
+            if (currentSecond != null && currentFirst != null) {
+                secondList.insertBefore(currentSecond.value, currentFirst.value);
+                currentSecond = currentSecond.next;
+                currentFirst = currentFirst.next;
+            } else if (currentFirst != null) {
+                secondList.append(currentFirst.value);
+                currentFirst = currentFirst.next;
+            } else {
+                break;
+            }
+
+        }
+          return secondList.head;
+    }
 }
+
+
