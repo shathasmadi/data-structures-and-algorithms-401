@@ -17,6 +17,12 @@ includes:Indicates whether that value exists as a Node’s value somewhere withi
 Time:bigO(n)
 space:bigO(1)
 
+
+## Whiteboard Process
+
+![linked-list](lab6.jpg)
+
+
 ## API
 insert : inserts method at the head of a list
 
