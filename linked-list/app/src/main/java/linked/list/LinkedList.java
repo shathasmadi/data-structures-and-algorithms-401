@@ -101,21 +101,27 @@ public class LinkedList {
        int count =0;
        Node curr= head;
 
-       while(curr.next != null){
+       while(curr != null){
            curr=curr.next;
            count++;
        }
+       int [] list =new int[count];
          curr=head;
-       if(k>=0){
-           for (int i = 0; i <count-k ; i++) {
-               if(curr.next != null) {
-                   curr=curr.next;
-               }
-       }
+        for (int i = 0; i < list.length; i++) {
+            list[i]=curr.value;
+            curr=curr.next;
+        }
+        int temp=0;
+        try {
+           temp = list[list.length-1-k];
+
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
 
 
-            }
-       return curr.value;
+        return temp;
     }
 
 

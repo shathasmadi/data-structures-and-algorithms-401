@@ -3,11 +3,11 @@
 Using this method you can insert the index, and it will return the value within that index or error messege of the index is out of the range.
 
 ## Whiteboard Process
-![linked-list-kth](challenge7.jpg)
+![linked-list-kth](codeseven.jpg)
 
 ## Approach & Efficiency
 time : Big o(n)
-space : Big O(1)
+space : Big O(n)
 
 ## Solution
 

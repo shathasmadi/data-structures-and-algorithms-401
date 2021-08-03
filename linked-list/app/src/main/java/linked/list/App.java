@@ -43,8 +43,8 @@ public class App {
 
 
         //code challenge 7: linked-list-kth
-        list.kthNode(0);
-        System.out.println(list.kthNode(20));
+
+        System.out.println(list.kthNode(-6));
 
     }
 }
