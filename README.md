@@ -9,6 +9,6 @@
 |array-binary-search|[link](array-binary-search/README.md)|
 |linked-list|[link](linked-list/README.md)|
 |linked-list-insertions|[link](linked-list/linked-list-insertions-README.md)|
-
+|linked-list-kth|[link](linked-list-kth)|
 
 

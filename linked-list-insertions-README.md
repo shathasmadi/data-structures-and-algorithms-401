@@ -5,7 +5,10 @@ insertBefore : insert a node before a node located i the middle or the first of 
 insertAfter :  insert after a node in the middle or last of the linked list
 
 ## Approach & Efficiency
-the three method have the same time and space :
+append :Time : 
+big O(1).
+space: big O(1).
+insertBefore and After
 Time : big O(n).
 space: big O(1).
 
