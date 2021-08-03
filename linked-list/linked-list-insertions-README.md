@@ -9,6 +9,11 @@ the three method have the same time and space :
 Time : big O(n).
 space: big O(1).
 
+## Whiteboard Process
+
+![linked-list-insertion](linked-list/lab6.jpg)
+
+
 ## Solution
 append :  //Can successfully add a node to the end of the linked list
 
