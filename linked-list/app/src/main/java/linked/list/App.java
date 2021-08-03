@@ -58,8 +58,14 @@ public class App {
         testTwo.append(5);
 
 
+
+        //code challenge 7: linked-list-kth
+
+        System.out.println(list.kthNode(-6));
+
         System.out.println(testOne);
         System.out.println(testTwo);
+
 
         linkedListZip(testOne, testTwo);
 
