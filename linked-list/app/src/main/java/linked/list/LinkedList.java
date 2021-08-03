@@ -83,13 +83,15 @@ public class LinkedList {
         Node newNode = new Node(newValue);
         Node curr = head;
 
-        while (curr.value != value) {
+        while (curr.next != null && curr.value != value) {
             curr = curr.next;
 
         }
+        if (curr.value == value){
+            newNode.next = curr.next;
+            curr.next = newNode;
 
-        newNode.next = curr.next;
-        curr.next = newNode;
+        }
 
     }
 
