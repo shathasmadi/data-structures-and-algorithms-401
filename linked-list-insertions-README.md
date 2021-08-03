@@ -13,7 +13,8 @@ Time : big O(n).
 space: big O(1).
 
 ## Whiteboard Process
-![linked-list-kth](lab6.jpg)
+
+![linked-list-insertion](linked-list/lab6.jpg)
 
 
 ## Solution
