@@ -10,5 +10,5 @@
 |linked-list|[link](linked-list/README.md)|
 |linked-list-insertions|[link](linked-list/linked-list-insertions-README.md)|
 |linked-list-kth|[link](linked-list-kth)|
-
+|linked-list-zip|[link](linked-list-zip)|
 
