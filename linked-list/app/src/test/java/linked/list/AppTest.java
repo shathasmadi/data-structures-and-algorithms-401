@@ -100,17 +100,16 @@ class AppTest {
 
 
         //Where k is greater than the length of the linked list
-        assertEquals(19,linkedTest.kthNode(20));
+        assertEquals(0,linkedTest.kthNode(24));
 
 
 
         //Where k and the length of the list are the sam
-          assertEquals(19,linkedTest.kthNode(16));
-
+          assertEquals(0,linkedTest.kthNode(16));
 
 
         //Where k is not a positive integer
-          assertEquals(19,linkedTest.kthNode(-15));
+          assertEquals(0,linkedTest.kthNode(-15));
 
 
 
