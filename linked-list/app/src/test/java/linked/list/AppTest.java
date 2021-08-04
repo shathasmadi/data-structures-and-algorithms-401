@@ -4,7 +4,10 @@
 package linked.list;
 
 import org.junit.jupiter.api.Test;
+
+import static linked.list.App.linkedListZip;
 import static org.junit.jupiter.api.Assertions.*;
+
 
 class AppTest {
     @Test void appHasAGreeting() {
@@ -124,6 +127,50 @@ class AppTest {
         assertEquals(8,linkedTest.kthNode(3));
 
 
+        // code challenge 8 linked-list-zip:
+
+        LinkedList testOne = new LinkedList();
+        testOne.append(1);
+
+
+        LinkedList testTwo = new LinkedList();
+        testTwo.append(8);
+        testTwo.append(5);
+
+        linkedListZip(testOne, testTwo);
+
+
+        assertEquals("{ 1 } -> { 8 } -> { 5 } -> NULL",testTwo.toString());
+
+
+        LinkedList test1= new LinkedList();
+        test1.append(1);
+
+
+        LinkedList test2= new LinkedList();
+        test2.append(8);
+
+
+        linkedListZip(test1, test2);
+
+
+        assertEquals("{ 8 } -> NULL",test2.toString());
+
+
+
+
+
+        LinkedList firstTest = new LinkedList();
+
+
+        LinkedList secondTest = new LinkedList();
+        secondTest.append(8);
+        secondTest.append(5);
+
+        linkedListZip(firstTest, secondTest);
+
+
+        assertEquals("{ 8 } -> { 5 } -> NULL",secondTest.toString());
     }
 
 
