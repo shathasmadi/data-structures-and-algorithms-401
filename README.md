@@ -12,5 +12,6 @@
 |linked-list-kth|[link](linked-list-kth)|
 |linked-list-zip|[link](linked-list-zip)|
 |stack--and-queue|[link](stack-and-queue)|
+|stack-queue-pseudo|[link](stack-queue-pseudo)|
 
 
