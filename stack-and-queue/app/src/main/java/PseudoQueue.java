@@ -20,7 +20,6 @@ public class PseudoQueue <T>{
         }
     }
 
-
      public T deQueue()
     {
         if (stack1.isEmpty())
