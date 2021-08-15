@@ -67,4 +67,20 @@ class AppTest {
 
 
     }
+
+    @Test public void maxValueTest(){
+
+        BinaryTree test = new BinaryTree();
+         test.setRoot(new Node(15));
+         test.getRoot().setLeft(new Node(22));
+       test.getRoot().setRight(new Node(3));
+       test.getRoot().getLeft().setLeft(new Node(4));
+
+        assertEquals(22,test.findMaxValue());
+
+
+
+    }
+
+
 }
