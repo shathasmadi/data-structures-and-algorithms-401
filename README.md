@@ -14,5 +14,6 @@
 |stack--and-queue|[link](stack-and-queue)|
 |stack-queue-pseudo|[link](stack-queue-pseudo)|
 |trees|[link](trees)|
-
+|stack-queue-brackets|[link](stack-queue-brackets)|
+|tree-max|[link](tree-max)|
 

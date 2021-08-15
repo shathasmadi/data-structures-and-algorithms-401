@@ -2,6 +2,8 @@ package trees;
 
 import java.util.ArrayList;
 
+import static java.lang.Integer.MIN_VALUE;
+
 public class BinaryTree <T> {
 
     private Node <T> root;
@@ -72,6 +74,17 @@ public class BinaryTree <T> {
         return postOrderArray;
     }
 
-
+     public int findMaxValue(){
+             int num = MIN_VALUE;
+             if (getRoot() != null) {
+                 ArrayList<T> listArray = inOrder(this.getRoot());
+                 for (T i : listArray) {
+                     if (num < (Integer)i) {
+                         num = (Integer)i;
+                     }
+                 }
+             }
+             return num;
+         }
 
         }

@@ -29,7 +29,11 @@ public class App {
         testTwo.add(5);
 
         System.out.println(testTwo.contains(50));
-        System.out.println(testTwo.contains(12));
+
+
+
+
+        System.out.println(testTwo.findMaxValue());
 
     }
 }
