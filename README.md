@@ -16,4 +16,5 @@
 |trees|[link](trees)|
 |stack-queue-brackets|[link](stack-queue-brackets)|
 |tree-max|[link](tree-max)|
+|tree-breadth-first|[link](tree-breadth-first)|
 

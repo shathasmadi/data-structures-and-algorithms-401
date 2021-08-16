@@ -81,6 +81,17 @@ class AppTest {
 
 
     }
+     @Test void BreadthFirstTest(){
+       BinaryTree binaryTree = new BinaryTree();
+       binaryTree.setRoot(new Node(4));
+       binaryTree.getRoot().setLeft(new Node(3));
+       binaryTree.getRoot().setRight(new Node(23));
+   binaryTree.getRoot().getLeft().setLeft(new Node(9));
+       assertEquals("[4, 3, 23, 9]",App.breadthFirstTree(binaryTree).toString());
+
+       BinaryTree test= new BinaryTree();
+       assertEquals("[]",App.breadthFirstTree(test).toString());
+  }
 
 
 }
