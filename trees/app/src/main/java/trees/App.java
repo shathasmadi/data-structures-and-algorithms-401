@@ -3,6 +3,11 @@
  */
 package trees;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -35,5 +40,31 @@ public class App {
 
         System.out.println(testTwo.findMaxValue());
 
+
+        System.out.println(breadthFirstTree(testTwo));
+
+
     }
+
+  public static ArrayList<Integer> breadthFirstTree(BinaryTree<Integer> tree){
+       ArrayList<Integer>list=new ArrayList<Integer>();
+         Queue<Node> queue= new LinkedList<>();
+        if (tree.getRoot()!=null){
+            queue.add(tree.getRoot());
+            while(!queue.isEmpty()){
+              Node node = queue.remove();
+              list.add((int)node.getData());
+              if (node.getLeft()!= null){
+                  queue.add(node.getLeft());
+              }
+                if (node.getRight()!= null){
+                    queue.add(node.getRight());
+                }
+            }
+        }
+        return list ;
+   }
+
+
+
 }
