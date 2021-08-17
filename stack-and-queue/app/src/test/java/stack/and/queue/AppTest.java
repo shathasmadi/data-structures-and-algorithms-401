@@ -91,41 +91,21 @@ class AppTest {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
 
+    @Test void bracketTest(){
+
+        String str = "{}";
+        assertTrue(App.bracketsBalanced(str));
+
+
+
+
+        String strr="{)";
+        assertFalse(App.bracketsBalanced(strr));
+
+    }
 
 
 

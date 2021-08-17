@@ -24,17 +24,57 @@ public class App {
 //        System.out.println(q.front.value);
 //        System.out.println(q.back.value);
 //        System.out.println(q.dequeue());
-
-        AnimalShelter animalOne =new AnimalShelter();
-        Dog animal = new Dog("alex");
-         animalOne.enqueue(animal);
-        System.out.println(animalOne.dequeue("dog"));
-        System.out.println(animalOne.dequeue("dog"));
-        System.out.println(animalOne.dequeue("cat"));
-
-
+//
+//        AnimalShelter animalOne =new AnimalShelter();
+//        Dog animal = new Dog("alex");
+//         animalOne.enqueue(animal);
+//        System.out.println(animalOne.dequeue("dog"));
+//        System.out.println(animalOne.dequeue("dog"));
+//        System.out.println(animalOne.dequeue("cat"));
 
 
+       String test = "{}";
+        System.out.println(bracketsBalanced(test));
 
+
+    }
+
+    public static boolean bracketsBalanced(String exp) {
+        Stack <Character> stack
+                = new Stack <Character>();
+
+        for (int i = 0; i < exp.length(); i++){
+            char ch = exp.charAt(i);
+
+            if (ch== '(' || ch == '[' || ch == '{') {
+
+                stack.push(ch);
+                continue;
+            }
+            if (stack.isEmpty())
+                return false;
+            char check;
+            switch (ch) {
+                case ')':
+                    check = stack.pop();
+                    if (check == '{' || check == '[')
+                        return false;
+                    break;
+
+                case '}':
+                    check = stack.pop();
+                    if (check == '(' || check == '[')
+                        return false;
+                    break;
+
+                case ']':
+                    check = stack.pop();
+                    if (check == '(' || check == '{')
+                        return false;
+                    break;
+            }
+        }
+
+        return (stack.isEmpty());
     }
 }
