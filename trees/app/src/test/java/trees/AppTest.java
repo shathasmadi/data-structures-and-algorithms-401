@@ -79,7 +79,26 @@ class AppTest {
 
         assertEquals(22, test.findMaxValue());
 
+        //challenge 18 :fizzBuzzTree
 
+        KaryTree<Integer> testk = new KaryTree<>(4);
+        testk.add(8);
+        testk.add(5);
+        testk.add(15);
+        testk.add(9);
+        KaryTree<String> test2=  App.fizzBuzzTree(testk);
+
+        //If the value is divisible by 3, replace the value with "Fizz"
+        assertEquals("8",test2.root.data);
+
+        //If the value is divisible by 5, replace the value with "Buzz"
+        assertEquals("FizzBuzz",test2.root.getChildren().get(1).data);
+
+        //If the value is divisible by 3 and 5, replace the value with "FizzBuzz"
+        assertEquals("FizzBuzz",test2.root.children.get(1).data);
+
+        //If the value is not divisible by 3 or 5, simply turn the number into a String.
+        assertEquals("Fizz",test2.root.children.get(2).data);
     }
 
     @Test

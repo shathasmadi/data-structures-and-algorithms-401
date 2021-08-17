@@ -5,18 +5,18 @@ import java.util.List;
 
 public class KNode <T>{
     T data;
-    List<KNode> children = new ArrayList<>();
+    List<KNode<T>> children = new ArrayList<>();
 
     public KNode(T data) {
         this.data = data;
     }
 
 
-    public List<KNode> getChildren() {
+    public List<KNode<T>> getChildren() {
         return children;
     }
 
-    public void addChild(KNode child) {
+    public void addChild(KNode<T> child) {
         this.children.add(child);
     }
 
