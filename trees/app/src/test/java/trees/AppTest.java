@@ -7,91 +7,93 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
+    @Test
+    void appHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
-
 
 
 //        Can successfully instantiate an empty tree
 
 
-               BinaryTree binary = new BinaryTree();
-               assertNull(binary.getRoot());
+        BinaryTree binary = new BinaryTree();
+        assertNull(binary.getRoot());
 
 //        Can successfully instantiate a tree with a single root node
 
-               BinaryTree binaryTree = new BinaryTree();
-               binaryTree.setRoot(new Node(2));
-               assertEquals(2,binaryTree.getRoot().getData());
+        BinaryTree binaryTree = new BinaryTree();
+        binaryTree.setRoot(new Node(2));
+        assertEquals(2, binaryTree.getRoot().getData());
 
 //        Can successfully add a left child and right child to a single root node
 
-              BinaryTree binaryTreeTest = new BinaryTree();
-              binaryTreeTest.setRoot(new Node(2));
-              binaryTreeTest.getRoot().setLeft(new Node(3));
-              binaryTreeTest.getRoot().setRight(new Node(4));
-              assertEquals(3,binaryTreeTest.getRoot().getLeft().getData());
-              assertEquals(4,binaryTreeTest.getRoot().getRight().getData());
+        BinaryTree binaryTreeTest = new BinaryTree();
+        binaryTreeTest.setRoot(new Node(2));
+        binaryTreeTest.getRoot().setLeft(new Node(3));
+        binaryTreeTest.getRoot().setRight(new Node(4));
+        assertEquals(3, binaryTreeTest.getRoot().getLeft().getData());
+        assertEquals(4, binaryTreeTest.getRoot().getRight().getData());
 
 
 //        Can successfully return a collection from a preorder traversal
 
-              binaryTree.setRoot(new Node(1));
-              binaryTree.getRoot().setLeft(new Node(2));
-              binaryTree.getRoot().setRight(new Node(3));
-              binaryTree.getRoot().getLeft().setLeft(new Node(4));
+        binaryTree.setRoot(new Node(1));
+        binaryTree.getRoot().setLeft(new Node(2));
+        binaryTree.getRoot().setRight(new Node(3));
+        binaryTree.getRoot().getLeft().setLeft(new Node(4));
 
-              assertEquals("[1, 2, 4, 3]", binaryTree.preOrder(binaryTree.getRoot()).toString());
+        assertEquals("[1, 2, 4, 3]", binaryTree.preOrder(binaryTree.getRoot()).toString());
 
 
 //        Can successfully return a collection from an inorder traversal
 
 
-             binaryTree.setRoot(new Node(1));
-             binaryTree.getRoot().setLeft(new Node(2));
-             binaryTree.getRoot().setRight(new Node(3));
-             binaryTree.getRoot().getLeft().setLeft(new Node(4));
+        binaryTree.setRoot(new Node(1));
+        binaryTree.getRoot().setLeft(new Node(2));
+        binaryTree.getRoot().setRight(new Node(3));
+        binaryTree.getRoot().getLeft().setLeft(new Node(4));
 
         assertEquals("[4, 2, 1, 3]", binaryTree.inOrder(binaryTree.getRoot()).toString());
 
 
 //        Can successfully return a collection from a postorder traversal
 
-             binaryTree.setRoot(new Node(1));
-             binaryTree.getRoot().setLeft(new Node(2));
-             binaryTree.getRoot().setRight(new Node(3));
-             binaryTree.getRoot().getLeft().setLeft(new Node(4));
+        binaryTree.setRoot(new Node(1));
+        binaryTree.getRoot().setLeft(new Node(2));
+        binaryTree.getRoot().setRight(new Node(3));
+        binaryTree.getRoot().getLeft().setLeft(new Node(4));
 
         assertEquals("[4, 2, 3, 1]", binaryTree.postOrder(binaryTree.getRoot()).toString());
 
 
     }
 
-    @Test public void maxValueTest(){
+    @Test
+    public void maxValueTest() {
 
         BinaryTree test = new BinaryTree();
-         test.setRoot(new Node(15));
-         test.getRoot().setLeft(new Node(22));
-       test.getRoot().setRight(new Node(3));
-       test.getRoot().getLeft().setLeft(new Node(4));
+        test.setRoot(new Node(15));
+        test.getRoot().setLeft(new Node(22));
+        test.getRoot().setRight(new Node(3));
+        test.getRoot().getLeft().setLeft(new Node(4));
 
-        assertEquals(22,test.findMaxValue());
-
+        assertEquals(22, test.findMaxValue());
 
 
     }
-     @Test void BreadthFirstTest(){
-       BinaryTree binaryTree = new BinaryTree();
-       binaryTree.setRoot(new Node(4));
-       binaryTree.getRoot().setLeft(new Node(3));
-       binaryTree.getRoot().setRight(new Node(23));
-   binaryTree.getRoot().getLeft().setLeft(new Node(9));
-       assertEquals("[4, 3, 23, 9]",App.breadthFirstTree(binaryTree).toString());
 
-       BinaryTree test= new BinaryTree();
-       assertEquals("[]",App.breadthFirstTree(test).toString());
-  }
+    @Test
+    void BreadthFirstTest() {
+        BinaryTree binaryTree = new BinaryTree();
+        binaryTree.setRoot(new Node(4));
+        binaryTree.getRoot().setLeft(new Node(3));
+        binaryTree.getRoot().setRight(new Node(23));
+        binaryTree.getRoot().getLeft().setLeft(new Node(9));
+        assertEquals("[4, 3, 23, 9]", App.breadthFirstTree(binaryTree).toString());
+
+        BinaryTree test = new BinaryTree();
+        assertEquals("[]", App.breadthFirstTree(test).toString());
+    }
 
 
 }
