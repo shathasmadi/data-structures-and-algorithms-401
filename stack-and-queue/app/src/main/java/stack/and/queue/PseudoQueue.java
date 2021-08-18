@@ -1,6 +1,6 @@
-import stack.and.queue.Stack;
+package stack.and.queue;
 
-public class PseudoQueue <T>{
+public class PseudoQueue<T>{
 
     public  Stack<T> stack1 = new Stack<T>();
     public Stack<T> stack2 = new Stack<T>();

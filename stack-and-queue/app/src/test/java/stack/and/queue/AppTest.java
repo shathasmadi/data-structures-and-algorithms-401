@@ -7,11 +7,11 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
+
     @Test void appHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
-
 
     @Test void stackAndQueueTest(){
         //Can successfully push onto a stack:
@@ -90,16 +90,16 @@ class AppTest {
            emptyTestQ.dequeue();
 
 
+        PseudoQueue<Integer> pseudoTest = new  PseudoQueue<>();
+
+
 
     }
-
 
     @Test void bracketTest(){
 
         String str = "{}";
         assertTrue(App.bracketsBalanced(str));
-
-
 
 
         String strr="{)";
@@ -121,10 +121,26 @@ class AppTest {
           System.out.println(testShelter.enqueue(c1).getName());
           System.out.println(testShelter.dequeue("Dog 1"));
 
+
+        assertEquals(expected,testShelter.enqueue(c1).getName());
+
         assertNull(null, String.valueOf(testShelter).toString());
     }
 
 
+    @Test void stackQueuePsudo(){
 
-}
+        // testing that its enqueue properly
+        PseudoQueue<Integer> test = new PseudoQueue<>();
+        test.enQueue(5);
+        assertEquals(5,test.stack1.peek());
+
+
+        // testing that it dequeue properly
+        assertEquals(5,test.deQueue());
+
+
+
+
+}}
 

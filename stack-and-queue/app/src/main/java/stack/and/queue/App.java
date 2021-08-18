@@ -33,7 +33,24 @@ public class App {
         System.out.println(animalOne.dequeue("cat"));
 
 
-       String test = "{}";
+        PseudoQueue<Integer> pseudoQueueTest  = new PseudoQueue<>();
+
+        pseudoQueueTest.enQueue(8);
+        pseudoQueueTest.enQueue(20);
+        pseudoQueueTest.enQueue(10);
+
+
+
+        System.out.println(pseudoQueueTest.stack1.toString());
+
+        System.out.println(pseudoQueueTest.deQueue());
+        System.out.println(pseudoQueueTest.deQueue());
+        System.out.println(pseudoQueueTest.deQueue());
+        System.out.println(pseudoQueueTest.deQueue());
+
+
+
+        String test = "{}";
         System.out.println(bracketsBalanced(test));
 
 
@@ -77,4 +94,7 @@ public class App {
 
         return (stack.isEmpty());
     }
+
+
+
 }
