@@ -107,8 +107,15 @@ class AppTest {
 
     }
 
+    @Test
+    public void emptyAnimalShelterTest() {
+        AnimalShelter testShelter = new AnimalShelter();
 
+
+        assertNull(null, String.valueOf(testShelter).toString());
+    }
 
 
 
 }
+
