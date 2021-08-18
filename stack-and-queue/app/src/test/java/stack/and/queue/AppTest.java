@@ -110,7 +110,16 @@ class AppTest {
     @Test
     public void emptyAnimalShelterTest() {
         AnimalShelter testShelter = new AnimalShelter();
+            Cat c1 =new Cat("cat");
+            Dog d1 = new Dog("Dog 1");
 
+            testShelter.enqueue(c1);
+            testShelter.dequeue("Dog 1");
+            String expected ="cat";
+
+          System.out.println(expected);
+          System.out.println(testShelter.enqueue(c1).getName());
+          System.out.println(testShelter.dequeue("Dog 1"));
 
         assertNull(null, String.valueOf(testShelter).toString());
     }

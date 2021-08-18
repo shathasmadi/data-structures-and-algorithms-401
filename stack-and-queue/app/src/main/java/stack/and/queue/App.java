@@ -10,27 +10,27 @@ public class App {
 
     public static void main(String[] args) {
 
-//        System.out.println(new App().getGreeting());
-//
-//        Stack <Integer> stack = new Stack<>();
-//
-//        System.out.println(stack.isEmpty());
-//        stack.push(5);
-//        System.out.println(stack.pop());
-//        System.out.println(stack.pop());
-//
-//        Queue <Integer> q = new Queue<>();
-//        q.enqueue(4);
-//        System.out.println(q.front.value);
-//        System.out.println(q.back.value);
-//        System.out.println(q.dequeue());
-//
-//        AnimalShelter animalOne =new AnimalShelter();
-//        Dog animal = new Dog("alex");
-//         animalOne.enqueue(animal);
-//        System.out.println(animalOne.dequeue("dog"));
-//        System.out.println(animalOne.dequeue("dog"));
-//        System.out.println(animalOne.dequeue("cat"));
+        System.out.println(new App().getGreeting());
+
+        Stack <Integer> stack = new Stack<>();
+
+        System.out.println(stack.isEmpty());
+        stack.push(5);
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+
+        Queue <Integer> q = new Queue<>();
+        q.enqueue(4);
+        System.out.println(q.front.value);
+        System.out.println(q.back.value);
+        System.out.println(q.dequeue());
+
+        AnimalShelter animalOne =new AnimalShelter();
+        Dog animal = new Dog("alex");
+         animalOne.enqueue(animal);
+        System.out.println(animalOne.dequeue("dog"));
+        System.out.println(animalOne.dequeue("dog"));
+        System.out.println(animalOne.dequeue("cat"));
 
 
        String test = "{}";

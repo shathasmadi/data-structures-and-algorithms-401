@@ -5,12 +5,14 @@ public class AnimalShelter {
     private  Queue<Cat> cat = new Queue<>();
 
 
-    public void enqueue(Dog value) {
-       this.dog.enqueue(value);
+    public Dog enqueue(Dog value) {
+      this.dog.enqueue(value);
+        return value;
     }
 
-    public void enqueue(Cat value) {
+    public Cat enqueue(Cat value) {
         this.cat.enqueue(value);
+        return value;
     }
 
     public String dequeue(String pref){

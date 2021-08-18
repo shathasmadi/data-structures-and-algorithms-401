@@ -14,6 +14,7 @@ public class Queue <T>{
             back.next=node;
             back=node;
         }
+
     }
 
 
