@@ -3,6 +3,8 @@ sorting an Array of elements from the beginning to end.
 
 ## Whiteboard Process
 
+![insertion-sort](challenge26.jpg)
+
 
 ## Approach & Efficiency
     Time: O(n^2)
@@ -10,5 +12,4 @@ sorting an Array of elements from the beginning to end.
 
 
 ## Solution
-
-
+![insertion-sort](result.png)
