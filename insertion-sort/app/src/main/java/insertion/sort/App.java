@@ -14,8 +14,8 @@ public class App {
         System.out.println(new App().getGreeting());
 
         int[] array = {8,4,23,42,16,15};
-        System.out.println(Arrays.toString(insertionSort(array)));
-
+//        System.out.println(Arrays.toString(insertionSort(array)));
+        System.out.println(Arrays.toString(mergeSort(array)));
 
     }
 
@@ -31,5 +31,63 @@ public class App {
             }
             return array;
         }
+
+
+    public static int[] mergeSort(int[] array){
+
+        if (array.length>1){
+            int mid=array.length/2;
+            int[] left;
+            int[] right;
+            right=new int[mid];
+            if (array.length%2==0){
+                left=new int[mid];
+                System.arraycopy(array, mid, right, 0, right.length );
+            }
+            else {
+                left=new int[mid+1];
+                System.arraycopy(array, mid+1, right, 0, right.length );
+            }
+
+            System.arraycopy(array, 0, left, 0, left.length );
+
+            mergeSort(left);
+            mergeSort(right);
+            merge(left,right,array);
+
+
+        }
+        return array;
+    }
+
+    public static void merge(int[] left,int[] right,int[] array){
+        int i=0;
+        int j=0;
+        int k=0;
+
+        while (i<left.length&&j<right.length){
+            if (left[i]<=right[j]){
+                array[k]=left[i];
+                i++;
+            }
+            else {
+                array[k]=right[j];
+                j++;
+            }
+            k++;
+        }
+        while (i < left.length) {
+            array[k] = left[i];
+            i++;
+            k++;
+        }
+        while (j<right.length){
+            array[k]=right[j];
+            j++;
+            k++;
+        }
+
+    }
+
     }
 
