@@ -3,7 +3,7 @@ sorting an Array of elements from the beginning to end.
 
 ## Whiteboard Process
 
-![insertion-sort](challenge26.jpg)
+![insertion-sort](challenges26.jpg)
 
 
 ## Approach & Efficiency
