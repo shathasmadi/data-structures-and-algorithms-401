@@ -25,7 +25,13 @@ class AppTest {
         assertEquals(Arrays.toString(arrayOne),Arrays.toString(insertionSort(arrayTwo)));
 
 
+    }
 
+    @Test void mergeSortTest(){
+        int[] array={15,19,3,17,8,2};
+        int[] Result={2,3,8,15,17,19};
+        assertArrayEquals(Result,App.mergeSort(array));
 
     }
+
 }

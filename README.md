@@ -19,4 +19,5 @@
 |tree-breadth-first|[link](tree-breadth-first)|
 |tree-fizz-buzz|[link](tree-fizz-buzz)|
 |insertion-sort|[link](insertion-sort)|
+|merge-sort|[link](merge-sort)|
 
