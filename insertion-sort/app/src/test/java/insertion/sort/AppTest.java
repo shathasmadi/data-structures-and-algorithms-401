@@ -25,11 +25,22 @@ class AppTest {
         assertEquals(Arrays.toString(arrayThree),Arrays.toString(insertionSort(array)));
 
         assertEquals(Arrays.toString(arrayOne),Arrays.toString(insertionSort(arrayTwo)));
-
-
-
+        
         int[] quickArray = {15, 12, 7, 6, 5, 7};
         int[] result = {5,6,7,7,12,15};
         assertEquals(Arrays.toString(result),Arrays.toString(quickSort(quickArray,0,5)));
+
     }
+
+
+
+
+    @Test void mergeSortTest(){
+        int[] array={15,19,3,17,8,2};
+        int[] Result={2,3,8,15,17,19};
+        assertArrayEquals(Result,App.mergeSort(array));
+
+
+    }
+
 }
