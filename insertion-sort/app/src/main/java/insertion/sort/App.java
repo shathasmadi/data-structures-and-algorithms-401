@@ -14,12 +14,14 @@ public class App {
         System.out.println(new App().getGreeting());
 
         int[] array = {8,4,23,42,16,15};
-        System.out.println(Arrays.toString(insertionSort(array)));
+//        System.out.println(Arrays.toString(insertionSort(array)));
+        System.out.println(Arrays.toString(quickSort(array,0,5)));
+
 
 
     }
 
-        public static int[] insertionSort(int[] array){
+    public static int[] insertionSort(int[] array){
             for(int i = 0;i<array.length;i++){
                 int j=i-1;
                 int temp = array[i];
@@ -31,5 +33,33 @@ public class App {
             }
             return array;
         }
+    public static int[] quickSort(int[] array, int left, int right) {
+        if(left < right) {
+            int partitionIndex = partition(array, left, right);
+            quickSort(array, left, partitionIndex - 1);
+            quickSort(array, partitionIndex + 1, right);
+        }
+        return array;
+    }
+
+   public static int partition(int[] array, int left, int right) {
+        int pivot = array[right];
+        int low = left - 1;
+        for(int i = left; i < right; i++) {
+            if(array[i] - pivot < 0) {
+                low++;
+                swap(array, i, low);
+            }
+        }
+
+        swap(array, right, low + 1);
+        return low + 1;
+    }
+
+    public static void swap(int[] array, int i, int low) {
+        int temp = array[i];
+        array[i] = array[low];
+        array[low] = temp;
+    }
     }
 
