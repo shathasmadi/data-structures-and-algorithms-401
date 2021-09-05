@@ -14,10 +14,21 @@ Implement a Hashtable by Create two classes
 ***
 
 ## Approach & Efficiency
-
+### add function
 * Space Complexity :Big O(n).
 * Time complexity  :Big O(n).
 
+### containes function
+* Space Complexity :Big O(n).
+* Time complexity  :Big O(n).
+
+### get function
+* Space Complexity :Big O(n).
+* Time complexity  :Big O(n).
+
+### hash function
+* Space Complexity :Big O(n).
+* Time complexity  :Big O(n).
 ***
 ## API
 
