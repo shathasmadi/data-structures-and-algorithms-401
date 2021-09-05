@@ -20,4 +20,6 @@
 |tree-fizz-buzz|[link](tree-fizz-buzz)|
 |insertion-sort|[link](insertion-sort)|
 |merge-sort|[link](merge-sort)|
-
+|quick-sort|[link](quick-sort)|
+|hash table|[link](hashtable)|
+|hashmap-repeated-word|[link](hashmap-repeated-word)|
