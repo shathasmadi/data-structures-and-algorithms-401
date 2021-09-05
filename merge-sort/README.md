@@ -10,7 +10,7 @@ Sorting an array by dividing it to two half each time until it is sorted from th
 
 Time : big O(n log(n))
 
-Space : big O(n)
+Space : O(n log n)
 
 ## Solution
 

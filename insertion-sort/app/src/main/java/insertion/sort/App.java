@@ -10,6 +10,7 @@ public class App {
         return "Hello World!";
     }
 
+
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
 
@@ -34,6 +35,7 @@ public class App {
         }
         return array;
     }
+
 
 
     public static int[] mergeSort(int[] array){
