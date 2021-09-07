@@ -114,6 +114,28 @@ class AppTest {
         assertEquals("[]", App.breadthFirstTree(test).toString());
     }
 
+@Test
+    void Intersection(){
 
+    BinaryTree<Integer> treeOne = new BinaryTree<>();
+    treeOne.setRoot(new Node<>(150));
+    treeOne.getRoot().setRight(new Node<>(250)) ;
+    treeOne.getRoot().setLeft(new Node<>(100));
+    treeOne.getRoot().getRight().setRight(new Node<>(350));
+
+    BinaryTree<Integer> treeTwo = new BinaryTree<>();
+    treeTwo.setRoot(new Node<>(150));
+    treeTwo.getRoot().setRight(new Node<>(250)) ;
+    treeTwo.getRoot().setLeft(new Node<>(10));
+    treeTwo.getRoot().getRight().setRight(new Node<>(3));
+
+    assertEquals("[150, 250]",App.treeIntersection(treeOne,treeTwo).toString());
+
+
+
+
+
+
+}
 
 }
