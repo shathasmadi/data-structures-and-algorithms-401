@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20e33bef-2fe1-45ae-8f4a-711580adf4e7" name="Changes" comment="" />
+    <list default="true" id="20e33bef-2fe1-45ae-8f4a-711580adf4e7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hashtable/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hashtable/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hashtable/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hashtable/HashTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/hashtable/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/hashtable/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trees/.idea/modules/app/trees.app.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trees/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trees/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +48,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Gradle.AppTest.appHasAGreeting">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hashtable.App" />
       <module name="hashtable.app.main" />
@@ -53,6 +61,27 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="AppTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;hashtable.AppTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="AppTest.appHasAGreeting" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -78,6 +107,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.AppTest.appHasAGreeting" />
+        <item itemvalue="Gradle.AppTest" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>

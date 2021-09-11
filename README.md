@@ -23,3 +23,4 @@
 |quick-sort|[link](quick-sort)|
 |hash table|[link](hashtable)|
 |hashmap-repeated-word|[link](hashmap-repeated-word)|
+|hashmap-left-join|[link](hashmap-left-join)|
