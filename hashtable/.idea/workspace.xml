@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20e33bef-2fe1-45ae-8f4a-711580adf4e7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hashtable/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hashtable/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hashtable/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hashtable/HashTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/hashtable/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/hashtable/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trees/.idea/modules/app/trees.app.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trees/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trees/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
