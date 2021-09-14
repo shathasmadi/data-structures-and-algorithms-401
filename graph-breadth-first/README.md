@@ -6,8 +6,7 @@
 - Return: A collection of nodes in the order they were visited.
 
 ## Whiteboard Process
-![challenge 36](graph-breadth-first/challenge36.jpg)
-
+![challenge 36](challenge36.png)
 ## Approach & Efficiency
 
 Time Complexity : BigO(n^2) because I have nested loop
