@@ -26,3 +26,4 @@
 |hashmap-left-join|[link](hashmap-left-join)|
 |graph|[link](graph)|
 |graph-breadth-first|[link](graph-breadth-first)|
+|graph-depth-first|[link](graph-depth-first)|

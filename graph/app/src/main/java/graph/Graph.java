@@ -1,12 +1,15 @@
 package graph;
 
 
+import org.w3c.dom.Node;
+
 import java.util.*;
 
 public class Graph <T>{
 
     Map<Vertex <T>, ArrayList<Vertex<T>>> map = new HashMap<>();
 
+    List<Vertex<T>> depth = new ArrayList<>();
 
     public Vertex<T> addNode(T value ){
 
@@ -43,6 +46,7 @@ public class Graph <T>{
      }
 
 
+
     public List<Vertex> breadthFirst(Vertex startVertex) {
         Queue<Vertex> queue = new LinkedList<>();
         List<Vertex> visited = new ArrayList<>();
@@ -65,6 +69,16 @@ public class Graph <T>{
     }
 
 
+    public List<Vertex<T>> depthFirst(Vertex<T> startValue) {
+        this.depth.add(startValue);
 
-
+        if (!map.get(startValue).isEmpty()) {
+            for(Vertex<T> data :getNeighbors(startValue) ) {
+                if (!depth.contains(data)){
+                    depthFirst(data);
+                }
+            }
+        }
+        return depth;
+    }
 }
